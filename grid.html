@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                align-items: center;
+            }
+            .container{
+                display: grid;
+                height: 600px;
+                width: 600px;
+                border: 2px solid green;
+                /* grid-template-columns:200px 200px 200px 200px; */
+                /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+                grid-template-columns: repeat(5,1fr);
+                /* grid-template-columns: 1fr 2fr 3fr 5fr; */
+                grid-template-rows: repeat(4,1fr) ;
+                row-gap: 10px;
+                column-gap: 10px;
+                margin: auto;
+            }
+            .child{
+                background-color: rgb(16, 78, 102);
+        
+                color: white;
+                text-align:center;
+
+            }
+            .child:hover{
+                background-color: burlywood;
+
+            }
+            /* .child1{ */
+                background-color: blueviolet;
+                grid-row: 1/5;
+            }
+            /* .child2{ */
+                background-color: chocolate;
+                /* grid-column-start: 3;
+                grid-column-end: 6; */
+                /* grid-column: 3/6; */
+                /* grid-row-start: 3;
+                grid-row-end: 5; */
+                /* grid-row: 3/5; */
+
+            }
+
+            h1{
+                margin-right: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Creating dimensional Layout</h1>
+        <div class="container">
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child1">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child2">4</div>
+            <div class="child">4</div>
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">1</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">4</div>
+            <div class="child">4</div>
+
+
+        </div>
+    </body>
+</html>
